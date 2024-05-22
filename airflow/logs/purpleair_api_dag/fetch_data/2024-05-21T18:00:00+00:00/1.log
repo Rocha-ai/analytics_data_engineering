@@ -1,0 +1,56 @@
+[2024-05-22 02:20:36,147] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [queued]>
+[2024-05-22 02:20:36,322] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [queued]>
+[2024-05-22 02:20:36,339] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 02:20:36,342] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 02:20:36,346] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 02:20:36,541] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): fetch_data> on 2024-05-21 18:00:00+00:00
+[2024-05-22 02:20:36,630] {standard_task_runner.py:52} INFO - Started process 2401 to run task
+[2024-05-22 02:20:36,818] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'fetch_data', 'scheduled__2024-05-21T18:00:00+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmp4pdhgn0n', '--error-file', '/tmp/tmplj6s2my6']
+[2024-05-22 02:20:37,090] {standard_task_runner.py:77} INFO - Job 21: Subtask fetch_data
+[2024-05-22 02:20:38,284] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [running]> on host 8fe6997c1526
+[2024-05-22 02:20:38,747] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-21T18:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-21T18:00:00+00:00
+[2024-05-22 02:20:39,269] {logging_mixin.py:109} INFO - Failed to retrieve data: 403
+[2024-05-22 02:20:39,281] {python.py:175} INFO - Done. Returned value was: None
+[2024-05-22 02:20:39,494] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=purpleair_api_dag, task_id=fetch_data, execution_date=20240521T180000, start_date=20240522T022036, end_date=20240522T022039
+[2024-05-22 02:20:39,838] {local_task_job.py:154} INFO - Task exited with return code 0
+[2024-05-22 02:20:40,278] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-22 04:17:51,145] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [queued]>
+[2024-05-22 04:17:51,315] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [queued]>
+[2024-05-22 04:17:51,327] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 04:17:51,329] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 04:17:51,338] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 04:17:51,515] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): fetch_data> on 2024-05-21 18:00:00+00:00
+[2024-05-22 04:17:51,596] {standard_task_runner.py:52} INFO - Started process 374 to run task
+[2024-05-22 04:17:51,701] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'fetch_data', 'scheduled__2024-05-21T18:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmp3gfvsrkk', '--error-file', '/tmp/tmp942__t7j']
+[2024-05-22 04:17:51,852] {standard_task_runner.py:77} INFO - Job 36: Subtask fetch_data
+[2024-05-22 04:17:52,670] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.fetch_data scheduled__2024-05-21T18:00:00+00:00 [running]> on host 3419eee920a5
+[2024-05-22 04:17:53,279] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=fetch_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-21T18:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-21T18:00:00+00:00
+[2024-05-22 04:17:53,301] {logging_mixin.py:109} INFO -  api is None
+[2024-05-22 04:17:53,334] {logging_mixin.py:109} INFO - Full URL: https://api.purpleair.com/v1/sensors?fields=latitude%2Clongitude%2Chumidity%2Cpm2.5_60minute%2Clast_seen&location_type=0&max_age=300
+[2024-05-22 04:17:53,334] {logging_mixin.py:109} INFO - Headers: {'X-API-Key': 'None'}
+[2024-05-22 04:17:53,479] {logging_mixin.py:109} INFO - Status Code: 403
+[2024-05-22 04:17:53,481] {logging_mixin.py:109} INFO - Response Content: {
+  "api_version" : "V1.0.13-0.0.56",
+  "time_stamp" : 1716351473,
+  "error" : "ApiKeyInvalidError",
+  "description" : "The provided api_key was not valid."
+}
+[2024-05-22 04:17:53,627] {logging_mixin.py:109} INFO - Failed to retrieve data: 403
+[2024-05-22 04:17:53,629] {python.py:175} INFO - Done. Returned value was: None
+[2024-05-22 04:17:53,706] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=purpleair_api_dag, task_id=fetch_data, execution_date=20240521T180000, start_date=20240522T041751, end_date=20240522T041753
+[2024-05-22 04:17:53,851] {local_task_job.py:154} INFO - Task exited with return code 0
+[2024-05-22 04:17:54,025] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

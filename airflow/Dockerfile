@@ -36,6 +36,7 @@ RUN DOWNLOAD_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/goo
 WORKDIR $AIRFLOW_HOME
 
 COPY scripts scripts
+COPY .env .
 RUN chmod +x scripts
 
 USER $AIRFLOW_UID

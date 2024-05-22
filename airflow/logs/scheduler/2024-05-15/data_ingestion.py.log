@@ -2245,3 +2245,341 @@ Traceback (most recent call last):
 TypeError: must be str, not NoneType
 [2024-05-15 06:19:59,060] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
 [2024-05-15 06:19:59,069] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.743 seconds
+[2024-05-15 06:20:29,156] {processor.py:163} INFO - Started process (PID=11049) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:20:29,157] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:20:29,158] {logging_mixin.py:109} INFO - [2024-05-15 06:20:29,158] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:20:29,904] {logging_mixin.py:109} INFO - [2024-05-15 06:20:29,902] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:20:29,920] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:20:29,929] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.778 seconds
+[2024-05-15 06:21:00,022] {processor.py:163} INFO - Started process (PID=11084) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:00,029] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:21:00,032] {logging_mixin.py:109} INFO - [2024-05-15 06:21:00,032] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:00,878] {logging_mixin.py:109} INFO - [2024-05-15 06:21:00,876] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:21:00,894] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:00,902] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.891 seconds
+[2024-05-15 06:21:30,991] {processor.py:163} INFO - Started process (PID=11109) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:30,994] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:21:30,994] {logging_mixin.py:109} INFO - [2024-05-15 06:21:30,994] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:31,734] {logging_mixin.py:109} INFO - [2024-05-15 06:21:31,732] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:21:31,750] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:21:31,759] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.772 seconds
+[2024-05-15 06:22:01,844] {processor.py:163} INFO - Started process (PID=11144) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:01,846] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:22:01,847] {logging_mixin.py:109} INFO - [2024-05-15 06:22:01,847] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:02,900] {logging_mixin.py:109} INFO - [2024-05-15 06:22:02,898] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:22:02,926] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:02,938] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.100 seconds
+[2024-05-15 06:22:33,025] {processor.py:163} INFO - Started process (PID=11170) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:33,028] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:22:33,028] {logging_mixin.py:109} INFO - [2024-05-15 06:22:33,028] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:33,753] {logging_mixin.py:109} INFO - [2024-05-15 06:22:33,751] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:22:33,768] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:22:33,776] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.757 seconds
+[2024-05-15 06:23:03,865] {processor.py:163} INFO - Started process (PID=11196) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:03,866] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:23:03,867] {logging_mixin.py:109} INFO - [2024-05-15 06:23:03,867] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:04,619] {logging_mixin.py:109} INFO - [2024-05-15 06:23:04,617] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:23:04,636] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:04,645] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.785 seconds
+[2024-05-15 06:23:34,726] {processor.py:163} INFO - Started process (PID=11233) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:34,729] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:23:34,730] {logging_mixin.py:109} INFO - [2024-05-15 06:23:34,729] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:35,469] {logging_mixin.py:109} INFO - [2024-05-15 06:23:35,466] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:23:35,489] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:23:35,500] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.778 seconds
+[2024-05-15 06:24:05,595] {processor.py:163} INFO - Started process (PID=11258) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:05,605] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:24:05,606] {logging_mixin.py:109} INFO - [2024-05-15 06:24:05,606] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:06,424] {logging_mixin.py:109} INFO - [2024-05-15 06:24:06,422] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 61, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 55, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:24:06,439] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:06,448] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.860 seconds
+[2024-05-15 06:24:20,358] {processor.py:163} INFO - Started process (PID=11272) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:20,360] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:24:20,361] {logging_mixin.py:109} INFO - [2024-05-15 06:24:20,361] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:21,100] {logging_mixin.py:109} INFO - [2024-05-15 06:24:21,098] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 62, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:24:21,117] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:21,128] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.775 seconds
+[2024-05-15 06:24:51,211] {processor.py:163} INFO - Started process (PID=11308) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:51,212] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:24:51,214] {logging_mixin.py:109} INFO - [2024-05-15 06:24:51,213] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:52,004] {logging_mixin.py:109} INFO - [2024-05-15 06:24:52,002] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 62, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:24:52,021] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:24:52,030] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.824 seconds
+[2024-05-15 06:25:22,112] {processor.py:163} INFO - Started process (PID=11333) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:22,116] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:25:22,117] {logging_mixin.py:109} INFO - [2024-05-15 06:25:22,117] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:22,964] {logging_mixin.py:109} INFO - [2024-05-15 06:25:22,961] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 62, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    return API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:25:22,983] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:22,992] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.885 seconds
+[2024-05-15 06:25:27,698] {processor.py:163} INFO - Started process (PID=11338) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:27,701] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:25:27,701] {logging_mixin.py:109} INFO - [2024-05-15 06:25:27,701] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:28,434] {logging_mixin.py:109} INFO - [2024-05-15 06:25:28,431] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:25:28,454] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:28,466] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.772 seconds
+[2024-05-15 06:25:58,550] {processor.py:163} INFO - Started process (PID=11373) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:58,551] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:25:58,552] {logging_mixin.py:109} INFO - [2024-05-15 06:25:58,552] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:59,266] {logging_mixin.py:109} INFO - [2024-05-15 06:25:59,264] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:25:59,281] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:25:59,289] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.744 seconds
+[2024-05-15 06:26:29,378] {processor.py:163} INFO - Started process (PID=11399) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:29,382] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:26:29,383] {logging_mixin.py:109} INFO - [2024-05-15 06:26:29,383] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:30,227] {logging_mixin.py:109} INFO - [2024-05-15 06:26:30,224] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:26:30,254] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:30,267] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.895 seconds
+[2024-05-15 06:26:37,248] {processor.py:163} INFO - Started process (PID=11414) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:37,252] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:26:37,253] {logging_mixin.py:109} INFO - [2024-05-15 06:26:37,253] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:38,016] {logging_mixin.py:109} INFO - max_age=300&location_type=0&fields=sensor_index%2Clatitude%2Clongitude%2Chumidity%2Cpm2.5_60minute%2Cpm2.5_6hour%2Clast_seen
+[2024-05-15 06:26:38,018] {logging_mixin.py:109} INFO - [2024-05-15 06:26:38,016] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 69, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 62, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:26:38,039] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:26:38,049] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.806 seconds
+[2024-05-15 06:27:08,147] {processor.py:163} INFO - Started process (PID=11439) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:08,149] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:27:08,150] {logging_mixin.py:109} INFO - [2024-05-15 06:27:08,150] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:08,861] {logging_mixin.py:109} INFO - max_age=300&location_type=0&fields=sensor_index%2Clatitude%2Clongitude%2Chumidity%2Cpm2.5_60minute%2Cpm2.5_6hour%2Clast_seen
+[2024-05-15 06:27:08,864] {logging_mixin.py:109} INFO - [2024-05-15 06:27:08,861] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 69, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 62, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:27:08,891] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:08,909] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.767 seconds
+[2024-05-15 06:27:12,955] {processor.py:163} INFO - Started process (PID=11453) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:12,958] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:27:12,959] {logging_mixin.py:109} INFO - [2024-05-15 06:27:12,959] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:13,699] {logging_mixin.py:109} INFO - [2024-05-15 06:27:13,697] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:27:13,721] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:13,734] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.784 seconds
+[2024-05-15 06:27:43,821] {processor.py:163} INFO - Started process (PID=11479) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:43,826] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:27:43,827] {logging_mixin.py:109} INFO - [2024-05-15 06:27:43,827] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:44,617] {logging_mixin.py:109} INFO - [2024-05-15 06:27:44,615] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:27:44,632] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:27:44,641] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.825 seconds
+[2024-05-15 06:28:14,722] {processor.py:163} INFO - Started process (PID=11505) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:14,725] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:28:14,726] {logging_mixin.py:109} INFO - [2024-05-15 06:28:14,726] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:15,432] {logging_mixin.py:109} INFO - [2024-05-15 06:28:15,430] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:28:15,451] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:15,463] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.745 seconds
+[2024-05-15 06:28:45,548] {processor.py:163} INFO - Started process (PID=11538) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:45,552] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:28:45,554] {logging_mixin.py:109} INFO - [2024-05-15 06:28:45,554] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:46,306] {logging_mixin.py:109} INFO - [2024-05-15 06:28:46,304] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:28:46,324] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:28:46,335] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.793 seconds
+[2024-05-15 06:29:16,419] {processor.py:163} INFO - Started process (PID=11563) to work on /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:29:16,422] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-05-15 06:29:16,423] {logging_mixin.py:109} INFO - [2024-05-15 06:29:16,423] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:29:17,151] {logging_mixin.py:109} INFO - [2024-05-15 06:29:17,149] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion.py", line 63, in <module>
+    api_url_value = api_url()
+  File "/opt/airflow/dags/data_ingestion.py", line 56, in api_url
+    url = str(API_URL + "?" + API_KEY + urllib.parse.urlencode({
+TypeError: must be str, not NoneType
+[2024-05-15 06:29:17,166] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-05-15 06:29:17,174] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 0.760 seconds
