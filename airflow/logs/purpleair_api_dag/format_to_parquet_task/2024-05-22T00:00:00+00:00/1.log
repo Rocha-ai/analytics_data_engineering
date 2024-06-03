@@ -1,0 +1,296 @@
+[2024-05-22 06:56:53,215] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 06:56:53,270] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 06:56:53,271] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 06:56:53,271] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 06:56:53,272] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 06:56:53,365] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2024-05-22 00:00:00+00:00
+[2024-05-22 06:56:53,411] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'format_to_parquet_task', 'scheduled__2024-05-22T00:00:00+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmpu8gzewy9', '--error-file', '/tmp/tmpgjneujpy']
+[2024-05-22 06:56:53,459] {standard_task_runner.py:77} INFO - Job 75: Subtask format_to_parquet_task
+[2024-05-22 06:56:53,402] {standard_task_runner.py:52} INFO - Started process 623 to run task
+[2024-05-22 06:56:53,777] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [running]> on host 148b4063f71c
+[2024-05-22 06:56:54,001] {warnings.py:99} WARNING - /home/***/.local/lib/python3.6/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-05-22 06:56:54,136] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-22T00:00:00+00:00
+[2024-05-22 06:56:54,140] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 110, in format_to_parquet
+    fields = glom(src_file, 'fields')
+  File "/home/airflow/.local/lib/python3.6/site-packages/glom/core.py", line 2296, in glom
+    raise err
+glom.core.PathAccessError: error raised while processing, details below.
+ Target-spec trace (most recent last):
+ - Target: '/opt/airflow/2024-05-22-0.json'
+ - Spec: 'fields'
+glom.core.PathAccessError: could not access 'fields', part 0 of Path('fields'), got error: AttributeError("'str' object has no attribute 'fields'",)
+[2024-05-22 06:56:54,186] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=purpleair_api_dag, task_id=format_to_parquet_task, execution_date=20240522T000000, start_date=20240522T065653, end_date=20240522T065654
+[2024-05-22 06:56:54,302] {standard_task_runner.py:92} ERROR - Failed to execute job 75 for task format_to_parquet_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 110, in format_to_parquet
+    fields = glom(src_file, 'fields')
+  File "/home/airflow/.local/lib/python3.6/site-packages/glom/core.py", line 2296, in glom
+    raise err
+glom.core.PathAccessError: error raised while processing, details below.
+ Target-spec trace (most recent last):
+ - Target: '/opt/airflow/2024-05-22-0.json'
+ - Spec: 'fields'
+glom.core.PathAccessError: could not access 'fields', part 0 of Path('fields'), got error: AttributeError("'str' object has no attribute 'fields'",)
+[2024-05-22 06:56:54,401] {local_task_job.py:154} INFO - Task exited with return code 1
+[2024-05-22 06:56:54,940] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-22 07:05:16,164] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:05:16,274] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:05:16,274] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:05:16,274] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 07:05:16,275] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:05:16,309] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2024-05-22 00:00:00+00:00
+[2024-05-22 07:05:16,326] {standard_task_runner.py:52} INFO - Started process 1173 to run task
+[2024-05-22 07:05:16,355] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'format_to_parquet_task', 'scheduled__2024-05-22T00:00:00+00:00', '--job-id', '153', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmp4i6x9hbm', '--error-file', '/tmp/tmpw0kwco3w']
+[2024-05-22 07:05:16,397] {standard_task_runner.py:77} INFO - Job 153: Subtask format_to_parquet_task
+[2024-05-22 07:05:16,953] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [running]> on host 148b4063f71c
+[2024-05-22 07:05:17,351] {warnings.py:99} WARNING - /home/***/.local/lib/python3.6/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-05-22 07:05:17,552] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-22T00:00:00+00:00
+[2024-05-22 07:05:17,556] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 110, in format_to_parquet
+    # Extract fields and data
+  File "/home/airflow/.local/lib/python3.6/site-packages/glom/core.py", line 2296, in glom
+    raise err
+glom.core.PathAccessError: error raised while processing, details below.
+ Target-spec trace (most recent last):
+ - Target: '/opt/airflow/2024-05-22-0.json'
+ - Spec: 'fields'
+glom.core.PathAccessError: could not access 'fields', part 0 of Path('fields'), got error: AttributeError("'str' object has no attribute 'fields'",)
+[2024-05-22 07:05:17,711] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=purpleair_api_dag, task_id=format_to_parquet_task, execution_date=20240522T000000, start_date=20240522T070516, end_date=20240522T070517
+[2024-05-22 07:05:17,858] {standard_task_runner.py:92} ERROR - Failed to execute job 153 for task format_to_parquet_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 110, in format_to_parquet
+    # Extract fields and data
+  File "/home/airflow/.local/lib/python3.6/site-packages/glom/core.py", line 2296, in glom
+    raise err
+glom.core.PathAccessError: error raised while processing, details below.
+ Target-spec trace (most recent last):
+ - Target: '/opt/airflow/2024-05-22-0.json'
+ - Spec: 'fields'
+glom.core.PathAccessError: could not access 'fields', part 0 of Path('fields'), got error: AttributeError("'str' object has no attribute 'fields'",)
+[2024-05-22 07:05:17,923] {local_task_job.py:154} INFO - Task exited with return code 1
+[2024-05-22 07:05:18,159] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-22 07:13:06,078] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:13:06,288] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:13:06,320] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:13:06,336] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 07:13:06,337] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:13:06,513] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2024-05-22 00:00:00+00:00
+[2024-05-22 07:13:06,647] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'format_to_parquet_task', 'scheduled__2024-05-22T00:00:00+00:00', '--job-id', '232', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmpb0t_wx4m', '--error-file', '/tmp/tmpxfmdloyp']
+[2024-05-22 07:13:06,614] {standard_task_runner.py:52} INFO - Started process 1708 to run task
+[2024-05-22 07:13:06,728] {standard_task_runner.py:77} INFO - Job 232: Subtask format_to_parquet_task
+[2024-05-22 07:13:07,659] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [running]> on host 148b4063f71c
+[2024-05-22 07:13:08,103] {warnings.py:99} WARNING - /home/***/.local/lib/python3.6/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-05-22 07:13:08,294] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-22T00:00:00+00:00
+[2024-05-22 07:13:08,295] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 108, in format_to_parquet
+    with open(src_file, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/2024-05-22-0.json'
+[2024-05-22 07:13:08,359] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=purpleair_api_dag, task_id=format_to_parquet_task, execution_date=20240522T000000, start_date=20240522T071306, end_date=20240522T071308
+[2024-05-22 07:13:08,466] {standard_task_runner.py:92} ERROR - Failed to execute job 232 for task format_to_parquet_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 108, in format_to_parquet
+    with open(src_file, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/2024-05-22-0.json'
+[2024-05-22 07:13:08,551] {local_task_job.py:154} INFO - Task exited with return code 1
+[2024-05-22 07:13:08,701] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-22 07:22:47,842] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:22:47,984] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [queued]>
+[2024-05-22 07:22:47,984] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:22:47,984] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2024-05-22 07:22:47,984] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-22 07:22:48,012] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2024-05-22 00:00:00+00:00
+[2024-05-22 07:22:48,122] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'purpleair_api_dag', 'format_to_parquet_task', 'scheduled__2024-05-22T00:00:00+00:00', '--job-id', '344', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion.py', '--cfg-path', '/tmp/tmptnvtxyvu', '--error-file', '/tmp/tmpqntk4c63']
+[2024-05-22 07:22:48,185] {standard_task_runner.py:77} INFO - Job 344: Subtask format_to_parquet_task
+[2024-05-22 07:22:48,080] {standard_task_runner.py:52} INFO - Started process 2405 to run task
+[2024-05-22 07:22:48,435] {logging_mixin.py:109} INFO - Running <TaskInstance: purpleair_api_dag.format_to_parquet_task scheduled__2024-05-22T00:00:00+00:00 [running]> on host 148b4063f71c
+[2024-05-22 07:22:48,602] {warnings.py:99} WARNING - /home/***/.local/lib/python3.6/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2024-05-22 07:22:48,789] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=purpleair_api_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-22T00:00:00+00:00
+[2024-05-22 07:22:48,790] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 108, in format_to_parquet
+    with open(src_file, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/2024-05-22-0.json'
+[2024-05-22 07:22:48,868] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=purpleair_api_dag, task_id=format_to_parquet_task, execution_date=20240522T000000, start_date=20240522T072247, end_date=20240522T072248
+[2024-05-22 07:22:48,953] {standard_task_runner.py:92} ERROR - Failed to execute job 344 for task format_to_parquet_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion.py", line 108, in format_to_parquet
+    with open(src_file, 'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/2024-05-22-0.json'
+[2024-05-22 07:22:49,057] {local_task_job.py:154} INFO - Task exited with return code 1
+[2024-05-22 07:22:49,203] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
