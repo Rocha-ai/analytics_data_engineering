@@ -2045,3 +2045,227 @@
 [2024-06-03 04:16:34,938] {logging_mixin.py:109} INFO - [2024-06-03 04:16:34,936] {dag.py:2396} INFO - Sync 1 DAGs
 [2024-06-03 04:16:34,966] {logging_mixin.py:109} INFO - [2024-06-03 04:16:34,966] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
 [2024-06-03 04:16:34,978] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.469 seconds
+[2024-06-03 04:17:05,068] {processor.py:163} INFO - Started process (PID=7713) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:05,070] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:17:05,071] {logging_mixin.py:109} INFO - [2024-06-03 04:17:05,071] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:06,074] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:06,088] {logging_mixin.py:109} INFO - [2024-06-03 04:17:06,086] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:17:06,110] {logging_mixin.py:109} INFO - [2024-06-03 04:17:06,110] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:17:06,121] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.058 seconds
+[2024-06-03 04:17:36,187] {processor.py:163} INFO - Started process (PID=7748) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:36,190] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:17:36,191] {logging_mixin.py:109} INFO - [2024-06-03 04:17:36,191] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:37,555] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:17:37,574] {logging_mixin.py:109} INFO - [2024-06-03 04:17:37,572] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:17:37,605] {logging_mixin.py:109} INFO - [2024-06-03 04:17:37,605] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:17:37,620] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.439 seconds
+[2024-06-03 04:18:07,713] {processor.py:163} INFO - Started process (PID=7773) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:07,716] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:18:07,716] {logging_mixin.py:109} INFO - [2024-06-03 04:18:07,716] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:08,762] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:08,775] {logging_mixin.py:109} INFO - [2024-06-03 04:18:08,773] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:18:08,795] {logging_mixin.py:109} INFO - [2024-06-03 04:18:08,795] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:18:08,806] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.098 seconds
+[2024-06-03 04:18:38,894] {processor.py:163} INFO - Started process (PID=7798) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:38,899] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:18:38,900] {logging_mixin.py:109} INFO - [2024-06-03 04:18:38,900] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:40,178] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:18:40,192] {logging_mixin.py:109} INFO - [2024-06-03 04:18:40,191] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:18:40,213] {logging_mixin.py:109} INFO - [2024-06-03 04:18:40,213] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:18:40,224] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.336 seconds
+[2024-06-03 04:19:10,315] {processor.py:163} INFO - Started process (PID=7834) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:10,317] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:19:10,318] {logging_mixin.py:109} INFO - [2024-06-03 04:19:10,318] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:11,552] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:11,566] {logging_mixin.py:109} INFO - [2024-06-03 04:19:11,564] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:19:11,587] {logging_mixin.py:109} INFO - [2024-06-03 04:19:11,587] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:19:11,599] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.291 seconds
+[2024-06-03 04:19:41,696] {processor.py:163} INFO - Started process (PID=7859) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:41,701] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:19:41,702] {logging_mixin.py:109} INFO - [2024-06-03 04:19:41,702] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:42,700] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:19:42,714] {logging_mixin.py:109} INFO - [2024-06-03 04:19:42,712] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:19:42,736] {logging_mixin.py:109} INFO - [2024-06-03 04:19:42,735] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:19:42,747] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.056 seconds
+[2024-06-03 04:20:12,820] {processor.py:163} INFO - Started process (PID=7883) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:12,826] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:20:12,827] {logging_mixin.py:109} INFO - [2024-06-03 04:20:12,827] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:13,853] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:13,867] {logging_mixin.py:109} INFO - [2024-06-03 04:20:13,865] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:20:13,890] {logging_mixin.py:109} INFO - [2024-06-03 04:20:13,890] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:20:13,900] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.086 seconds
+[2024-06-03 04:20:43,963] {processor.py:163} INFO - Started process (PID=7908) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:43,965] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:20:43,967] {logging_mixin.py:109} INFO - [2024-06-03 04:20:43,966] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:45,320] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:20:45,338] {logging_mixin.py:109} INFO - [2024-06-03 04:20:45,336] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:20:45,369] {logging_mixin.py:109} INFO - [2024-06-03 04:20:45,369] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:20:45,382] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.425 seconds
+[2024-06-03 04:21:15,477] {processor.py:163} INFO - Started process (PID=7944) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:15,481] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:21:15,482] {logging_mixin.py:109} INFO - [2024-06-03 04:21:15,482] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:17,037] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:17,056] {logging_mixin.py:109} INFO - [2024-06-03 04:21:17,054] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:21:17,086] {logging_mixin.py:109} INFO - [2024-06-03 04:21:17,086] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:21:17,110] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.640 seconds
+[2024-06-03 04:21:47,220] {processor.py:163} INFO - Started process (PID=7969) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:47,222] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:21:47,223] {logging_mixin.py:109} INFO - [2024-06-03 04:21:47,223] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:48,347] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:21:48,361] {logging_mixin.py:109} INFO - [2024-06-03 04:21:48,360] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:21:48,388] {logging_mixin.py:109} INFO - [2024-06-03 04:21:48,388] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:21:48,403] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.189 seconds
+[2024-06-03 04:22:18,493] {processor.py:163} INFO - Started process (PID=7994) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:18,495] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:22:18,497] {logging_mixin.py:109} INFO - [2024-06-03 04:22:18,496] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:19,918] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:19,937] {logging_mixin.py:109} INFO - [2024-06-03 04:22:19,936] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:22:19,971] {logging_mixin.py:109} INFO - [2024-06-03 04:22:19,971] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:22:19,984] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.498 seconds
+[2024-06-03 04:22:50,090] {processor.py:163} INFO - Started process (PID=8029) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:50,093] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:22:50,094] {logging_mixin.py:109} INFO - [2024-06-03 04:22:50,094] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:51,094] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:22:51,108] {logging_mixin.py:109} INFO - [2024-06-03 04:22:51,106] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:22:51,127] {logging_mixin.py:109} INFO - [2024-06-03 04:22:51,127] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:22:51,137] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.052 seconds
+[2024-06-03 04:23:21,206] {processor.py:163} INFO - Started process (PID=8054) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:21,211] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:23:21,213] {logging_mixin.py:109} INFO - [2024-06-03 04:23:21,213] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:22,635] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:22,668] {logging_mixin.py:109} INFO - [2024-06-03 04:23:22,666] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:23:22,704] {logging_mixin.py:109} INFO - [2024-06-03 04:23:22,704] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:23:22,717] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.517 seconds
+[2024-06-03 04:23:52,833] {processor.py:163} INFO - Started process (PID=8089) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:52,837] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:23:52,839] {logging_mixin.py:109} INFO - [2024-06-03 04:23:52,838] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:54,343] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:23:54,360] {logging_mixin.py:109} INFO - [2024-06-03 04:23:54,359] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:23:54,396] {logging_mixin.py:109} INFO - [2024-06-03 04:23:54,395] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:23:54,419] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.604 seconds
+[2024-06-03 04:24:24,506] {processor.py:163} INFO - Started process (PID=8113) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:24,509] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:24:24,510] {logging_mixin.py:109} INFO - [2024-06-03 04:24:24,509] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:25,525] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:25,540] {logging_mixin.py:109} INFO - [2024-06-03 04:24:25,538] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:24:25,562] {logging_mixin.py:109} INFO - [2024-06-03 04:24:25,562] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:24:25,572] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.071 seconds
+[2024-06-03 04:24:55,636] {processor.py:163} INFO - Started process (PID=8138) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:55,639] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:24:55,640] {logging_mixin.py:109} INFO - [2024-06-03 04:24:55,640] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:56,677] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:24:56,691] {logging_mixin.py:109} INFO - [2024-06-03 04:24:56,689] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:24:56,714] {logging_mixin.py:109} INFO - [2024-06-03 04:24:56,714] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:24:56,726] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.095 seconds
+[2024-06-03 04:25:26,787] {processor.py:163} INFO - Started process (PID=8163) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:26,789] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:25:26,790] {logging_mixin.py:109} INFO - [2024-06-03 04:25:26,790] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:27,827] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:27,841] {logging_mixin.py:109} INFO - [2024-06-03 04:25:27,839] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:25:27,863] {logging_mixin.py:109} INFO - [2024-06-03 04:25:27,863] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:25:27,874] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.092 seconds
+[2024-06-03 04:25:57,936] {processor.py:163} INFO - Started process (PID=8195) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:57,940] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:25:57,942] {logging_mixin.py:109} INFO - [2024-06-03 04:25:57,942] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:59,237] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:25:59,256] {logging_mixin.py:109} INFO - [2024-06-03 04:25:59,254] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:25:59,285] {logging_mixin.py:109} INFO - [2024-06-03 04:25:59,285] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:25:59,298] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.368 seconds
+[2024-06-03 04:26:29,396] {processor.py:163} INFO - Started process (PID=8223) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:26:29,399] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:26:29,400] {logging_mixin.py:109} INFO - [2024-06-03 04:26:29,400] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:26:30,784] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:26:30,803] {logging_mixin.py:109} INFO - [2024-06-03 04:26:30,801] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:26:30,831] {logging_mixin.py:109} INFO - [2024-06-03 04:26:30,831] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:26:30,843] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.453 seconds
+[2024-06-03 04:27:00,936] {processor.py:163} INFO - Started process (PID=8249) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:00,938] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:27:00,939] {logging_mixin.py:109} INFO - [2024-06-03 04:27:00,939] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:01,935] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:01,954] {logging_mixin.py:109} INFO - [2024-06-03 04:27:01,952] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:27:01,980] {logging_mixin.py:109} INFO - [2024-06-03 04:27:01,980] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:27:01,991] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.060 seconds
+[2024-06-03 04:27:32,053] {processor.py:163} INFO - Started process (PID=8284) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:32,057] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:27:32,058] {logging_mixin.py:109} INFO - [2024-06-03 04:27:32,058] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:33,458] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:27:33,477] {logging_mixin.py:109} INFO - [2024-06-03 04:27:33,475] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:27:33,506] {logging_mixin.py:109} INFO - [2024-06-03 04:27:33,506] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:27:33,519] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.472 seconds
+[2024-06-03 04:28:03,609] {processor.py:163} INFO - Started process (PID=8309) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:03,613] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:28:03,614] {logging_mixin.py:109} INFO - [2024-06-03 04:28:03,614] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:04,638] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:04,651] {logging_mixin.py:109} INFO - [2024-06-03 04:28:04,650] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:28:04,673] {logging_mixin.py:109} INFO - [2024-06-03 04:28:04,672] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:28:04,683] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.079 seconds
+[2024-06-03 04:28:34,720] {processor.py:163} INFO - Started process (PID=8333) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:34,723] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:28:34,725] {logging_mixin.py:109} INFO - [2024-06-03 04:28:34,725] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:36,239] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:28:36,256] {logging_mixin.py:109} INFO - [2024-06-03 04:28:36,254] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:28:36,285] {logging_mixin.py:109} INFO - [2024-06-03 04:28:36,285] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:28:36,298] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.584 seconds
+[2024-06-03 04:29:06,409] {processor.py:163} INFO - Started process (PID=8367) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:06,420] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:29:06,429] {logging_mixin.py:109} INFO - [2024-06-03 04:29:06,428] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:08,043] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:08,061] {logging_mixin.py:109} INFO - [2024-06-03 04:29:08,059] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:29:08,090] {logging_mixin.py:109} INFO - [2024-06-03 04:29:08,090] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:29:08,102] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.711 seconds
+[2024-06-03 04:29:38,192] {processor.py:163} INFO - Started process (PID=8394) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:38,194] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:29:38,196] {logging_mixin.py:109} INFO - [2024-06-03 04:29:38,195] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:39,213] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:29:39,226] {logging_mixin.py:109} INFO - [2024-06-03 04:29:39,225] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:29:39,247] {logging_mixin.py:109} INFO - [2024-06-03 04:29:39,246] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:29:39,256] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.069 seconds
+[2024-06-03 04:30:09,305] {processor.py:163} INFO - Started process (PID=8420) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:09,308] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:30:09,309] {logging_mixin.py:109} INFO - [2024-06-03 04:30:09,309] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:10,636] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:10,656] {logging_mixin.py:109} INFO - [2024-06-03 04:30:10,654] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:30:10,686] {logging_mixin.py:109} INFO - [2024-06-03 04:30:10,686] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:30:10,700] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.399 seconds
+[2024-06-03 04:30:40,805] {processor.py:163} INFO - Started process (PID=8456) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:40,811] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:30:40,812] {logging_mixin.py:109} INFO - [2024-06-03 04:30:40,812] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:41,840] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:30:41,853] {logging_mixin.py:109} INFO - [2024-06-03 04:30:41,852] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:30:41,880] {logging_mixin.py:109} INFO - [2024-06-03 04:30:41,879] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:30:41,893] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.093 seconds
+[2024-06-03 04:31:11,987] {processor.py:163} INFO - Started process (PID=8481) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:11,990] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:31:11,991] {logging_mixin.py:109} INFO - [2024-06-03 04:31:11,991] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:13,052] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:13,066] {logging_mixin.py:109} INFO - [2024-06-03 04:31:13,064] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:31:13,085] {logging_mixin.py:109} INFO - [2024-06-03 04:31:13,085] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:31:13,095] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.113 seconds
+[2024-06-03 04:31:43,179] {processor.py:163} INFO - Started process (PID=8506) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:43,181] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:31:43,182] {logging_mixin.py:109} INFO - [2024-06-03 04:31:43,182] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:44,460] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:31:44,479] {logging_mixin.py:109} INFO - [2024-06-03 04:31:44,477] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:31:44,509] {logging_mixin.py:109} INFO - [2024-06-03 04:31:44,508] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:31:44,521] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.347 seconds
+[2024-06-03 04:32:14,615] {processor.py:163} INFO - Started process (PID=8543) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:14,619] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:32:14,620] {logging_mixin.py:109} INFO - [2024-06-03 04:32:14,620] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:15,967] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:15,985] {logging_mixin.py:109} INFO - [2024-06-03 04:32:15,983] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:32:16,015] {logging_mixin.py:109} INFO - [2024-06-03 04:32:16,015] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:32:16,028] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.419 seconds
+[2024-06-03 04:32:46,110] {processor.py:163} INFO - Started process (PID=8568) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:46,113] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:32:46,114] {logging_mixin.py:109} INFO - [2024-06-03 04:32:46,113] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:47,130] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:32:47,151] {logging_mixin.py:109} INFO - [2024-06-03 04:32:47,149] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:32:47,178] {logging_mixin.py:109} INFO - [2024-06-03 04:32:47,178] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:32:47,190] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.085 seconds
+[2024-06-03 04:33:17,245] {processor.py:163} INFO - Started process (PID=8594) to work on /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:33:17,247] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion.py for tasks to queue
+[2024-06-03 04:33:17,248] {logging_mixin.py:109} INFO - [2024-06-03 04:33:17,248] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:33:18,519] {processor.py:654} INFO - DAG(s) dict_keys(['purpleair_api_dag']) retrieved from /opt/airflow/dags/data_ingestion.py
+[2024-06-03 04:33:18,538] {logging_mixin.py:109} INFO - [2024-06-03 04:33:18,536] {dag.py:2396} INFO - Sync 1 DAGs
+[2024-06-03 04:33:18,567] {logging_mixin.py:109} INFO - [2024-06-03 04:33:18,567] {dag.py:2935} INFO - Setting next_dagrun for purpleair_api_dag to 2024-06-03T04:00:00+00:00
+[2024-06-03 04:33:18,579] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion.py took 1.340 seconds
